@@ -43,7 +43,7 @@ class TSFHttpServ extends Swoole\Network\Protocol\BaseServer{
      * @return [type] [description]
      */
     public function onHttpWorkInit($request, $response){
-
+        echo 'server start'.PHP_EOL;
         $scheduler = new \Swoole\Coroutine\Scheduler();
         $request ->scheduler = $scheduler;
     }
