@@ -21,7 +21,8 @@ class TestController extends Controller{
 	private function test(){
 
 		$test  = new TestModel();
-		$res = (yield $test ->udpTest());
+		//$res = (yield $test ->udpTest());
+		$res = (yield $test ->test());
 		SysLog::info(__METHOD__ . " res == " .print_r($res, true), __CLASS__);
 		if ($res['r'] == 0) {
 

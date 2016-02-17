@@ -18,7 +18,7 @@ Tencent Server Framework is a coroutine and Swoole based server framework for fa
 
 - php5.5+ 
 - Swoole1.7.18+
-- linux,OS X
+- linux,OS X (lower then 10.11?)
 
 ## Installation
 - [PHP install](https://github.com/php/php-src)
@@ -59,7 +59,7 @@ log_file = '/data/log/test.log'
 #### How to start your server
 ```php
 cd /root/tsf/bin/
-php swoole testHttpServ start
+php swoole.php testHttpServ start
 
 ```
 - Support Cmds: start,stop,reload,restart,status,shutdown

@@ -291,6 +291,7 @@ function CheckProcessExist()
     $ret=system("ps aux | grep ".SuperProcessName." | grep -v grep ");
     StartLog(__LINE__."ps aux | grep ".SuperProcessName." | grep -v grep  and return ".print_r($ret,true));
     if(empty($ret)) {//挂了 什么都没有  之后可能要通过数量来获取}
+        //ps aux | grep testHttpServ | grep -v grep | awk '{print $2}' | sudo xargs kill
         return false;
     }else{
         return true;

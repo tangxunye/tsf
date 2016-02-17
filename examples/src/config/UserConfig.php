@@ -13,7 +13,7 @@
 //用来配置用户自定义的路由规则 以及一些log级别等
  class  UserConfig {
      public  static  $UserConf=array(
-         'log'=>array('log_path'=>'/data/log/',
+         'log'=>array('log_path'=>'/Code/swoole_mytsf/log/',
              'log_level'=>array(
                  'info'=>1,
                  'warning'=>1,
