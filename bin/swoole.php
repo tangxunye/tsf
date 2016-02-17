@@ -19,8 +19,8 @@ $cmds=array('start','stop','reload','restart','shutdown','status');
 //php swoole.php testserver start
 
 
-$name = $argv[1];
-$cmd = $argv[2];   //cmd name
+$name = @$argv[1];
+$cmd = @$argv[2];   //cmd name
 $cmd=empty($cmd)?$name:$cmd;
 $RunningServer=array();
 //需要cmd 和 name  name 支持 all 和 具体的serverName
